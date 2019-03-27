@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26030B0A224BC71200204BDF /* DetailKosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26030B09224BC71200204BDF /* DetailKosViewModel.swift */; };
 		263A0686224A3C1C00A62164 /* KosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A0685224A3C1C00A62164 /* KosViewModel.swift */; };
 		263A0688224A3C4300A62164 /* KosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A0687224A3C4300A62164 /* KosModel.swift */; };
 		263A068D224A3FC200A62164 /* KosViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A068C224A3FC200A62164 /* KosViewController+TableViewDataSource.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26030B09224BC71200204BDF /* DetailKosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKosViewModel.swift; sourceTree = "<group>"; };
 		263A0685224A3C1C00A62164 /* KosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosViewModel.swift; sourceTree = "<group>"; };
 		263A0687224A3C4300A62164 /* KosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosModel.swift; sourceTree = "<group>"; };
 		263A068C224A3FC200A62164 /* KosViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KosViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				263A0685224A3C1C00A62164 /* KosViewModel.swift */,
+				26030B09224BC71200204BDF /* DetailKosViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				263A0697224A4DD700A62164 /* KosViewController+TableViewDelegate.swift in Sources */,
 				263A0686224A3C1C00A62164 /* KosViewModel.swift in Sources */,
 				26AC1127224A39C200D4FAE7 /* NetworkFacade.swift in Sources */,
+				26030B0A224BC71200204BDF /* DetailKosViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

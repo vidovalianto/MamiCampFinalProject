@@ -13,7 +13,7 @@ import UIKit
 class DetailKosViewController: UIViewController {
     
     
-    
+    lazy var detailKosViewModel = DetailKosViewModel()
 
     @IBOutlet weak var kosImageView: UIImageView!
     @IBOutlet weak var namaKosLbl: UILabel!
@@ -23,10 +23,15 @@ class DetailKosViewController: UIViewController {
     @IBOutlet weak var priceLbl: UILabel!
     
     var kostModel : KosModel!
+    var roomID : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLbl()
+        
+        //Cara kedua
+        detailKosViewModel.delegate = self
+        detailKosViewModel.loadKos(roomId: self.roomID)
         // Do any additional setup after loading the view.
     }
     
@@ -41,6 +46,7 @@ class DetailKosViewController: UIViewController {
     }
     
     
+    
 
     /*
     // MARK: - Navigation
@@ -52,4 +58,19 @@ class DetailKosViewController: UIViewController {
     }
     */
 
+}
+
+extension DetailKosViewController : DetailKosViewModelDelegate{
+    func onDetailKosLoaded() {
+        if let kostModel = self.detailKosViewModel.kosDetail{
+            namaKosLbl.text = kostModel.name
+            detailKosLbl.text = kostModel.type
+            categoryKosLbl.text = kostModel.category
+            kosImageView.loadImageUrl(url: kostModel.image_url)
+            descriptionKosLbl.text = kostModel.description
+            detailKosLbl.colorCode()
+            priceLbl.text = " - " + kostModel.price
+        }
+        
+    }
 }

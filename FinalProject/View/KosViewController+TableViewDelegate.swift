@@ -18,6 +18,7 @@ extension ViewController : UITableViewDelegate{
             
             controller.kostModel = self.kosViewModel.listKos[indexPath.row]
             controller.title = self.kosViewModel.listKos[indexPath.row].name
+            controller.roomID = self.kosViewModel.listKos[indexPath.row].id
             
             self.show(controller, sender: self)
         } else {

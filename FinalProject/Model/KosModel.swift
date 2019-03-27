@@ -12,6 +12,7 @@ import SwiftyJSON
 class KosModel {
     var baseUrl = "https://esjeruks.com/api-mamicamp/public/api/room"
     
+    var id : String = ""
     var name : String = ""
     var description : String = ""
     var type : String = ""
@@ -20,6 +21,7 @@ class KosModel {
     var image_url : String = ""
     
     required init(_ object: JSON) {
+        self.id = object["id"].stringValue
         self.name = object["name"].stringValue
         self.description = object["description"].stringValue
         self.type = object["type"].stringValue
