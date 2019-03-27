@@ -126,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gem-sz-rLX">
-                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <rect key="frame" x="10" y="30" width="355" height="616"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Kost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uej-qZ-2x0">
                                         <rect key="frame" x="10" y="10" width="335" height="21"/>
@@ -246,11 +246,20 @@
                                     <constraint firstAttribute="trailing" secondItem="WD4-hR-OyE" secondAttribute="trailing" constant="10" id="y1p-LM-gm7"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLy-xw-l4U">
+                                <rect key="frame" x="0.0" y="646" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fLy-xw-l4U" firstAttribute="leading" secondItem="Yzc-7z-WSA" secondAttribute="leading" id="JYs-uu-8S4"/>
+                            <constraint firstItem="fLy-xw-l4U" firstAttribute="top" secondItem="gem-sz-rLX" secondAttribute="bottom" id="cdE-jk-dej"/>
+                            <constraint firstItem="Yzc-7z-WSA" firstAttribute="bottom" secondItem="fLy-xw-l4U" secondAttribute="bottom" id="esH-Oj-qmW"/>
                             <constraint firstItem="gem-sz-rLX" firstAttribute="top" secondItem="Yzc-7z-WSA" secondAttribute="top" constant="10" id="fNy-Xh-hoF"/>
-                            <constraint firstItem="Yzc-7z-WSA" firstAttribute="bottom" secondItem="gem-sz-rLX" secondAttribute="bottom" constant="10" id="faP-WZ-kZm"/>
+                            <constraint firstItem="Yzc-7z-WSA" firstAttribute="trailing" secondItem="fLy-xw-l4U" secondAttribute="trailing" id="gMj-wl-PpL"/>
                             <constraint firstItem="Yzc-7z-WSA" firstAttribute="trailing" secondItem="gem-sz-rLX" secondAttribute="trailing" constant="10" id="h6P-ij-X3z"/>
                             <constraint firstItem="gem-sz-rLX" firstAttribute="leading" secondItem="Yzc-7z-WSA" secondAttribute="leading" constant="10" id="vnh-bN-SLg"/>
                         </constraints>
@@ -261,6 +270,7 @@
                         <outlet property="deskripsiKostET" destination="2tf-TI-bPQ" id="Dfg-3I-3co"/>
                         <outlet property="hargaKostET" destination="zhn-Gi-mym" id="cx1-Lk-Nl1"/>
                         <outlet property="namaKostET" destination="Om8-VP-VRd" id="Lh1-el-e8W"/>
+                        <outlet property="notificationLbl" destination="fLy-xw-l4U" id="gBY-yH-PMx"/>
                         <outlet property="simpanBtn" destination="2dF-yp-AWY" id="XuP-w9-YYL"/>
                         <outlet property="tipeKostET" destination="yc4-2P-bHn" id="92M-JU-FIZ"/>
                     </connections>
